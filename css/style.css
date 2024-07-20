@@ -1,0 +1,361 @@
+/* fonts */
+@import "./fonts.css";
+
+/* variables */
+@import "./variables.css";
+
+/* initial-style */
+@import "./initial-style.css";
+
+/* main-styles */
+
+/* CONTAINER */
+.container {
+  width: 100%;
+  max-width: 1168px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* HEADER */
+.site-header-wrapper {
+  position: relative;
+  padding: 24px 32px;
+  background-image: linear-gradient(
+      180deg,
+      rgba(0, 0, 0, 0.6) 10%,
+      rgba(0, 0, 0, 0) 100%
+    ),
+    url("../img/header-bg.jpeg");
+  background-position: 50% 33%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 600px;
+  border-radius: 24px;
+  margin-bottom: 200px;
+}
+.site-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.header__find-btns-container {
+  display: flex;
+  gap: 32px;
+  align-items: center;
+}
+.header__find-btn {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+.header__find-btn__icon {
+  width: 24px;
+  height: 24px;
+}
+.header__find-btn__text {
+  font-family: Montserrat;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+.header__logo {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 110.353px;
+  height: 36px;
+}
+.logo {
+}
+.header__auth-btns-container {
+  display: flex;
+  gap: 32px;
+}
+.auth-btn {
+  font-family: Montserrat;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+.auth-fill-btn {
+  padding: 10px 24px;
+  border-radius: 8px;
+  background: var(--Neutrals);
+  color: var(--Blackish-Green);
+  text-align: center;
+  font-family: Montserrat;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+.site-hero {
+}
+.hero__container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-top: 84px;
+}
+.hero__second-heading {
+  font-family: "TradeGothic LT";
+  font-size: 45px;
+  font-weight: bold;
+  line-height: normal;
+  margin-bottom: 4px;
+}
+.hero__heading {
+  font-family: "TradeGothic LT";
+  font-size: 80px;
+  font-weight: bold;
+  line-height: normal;
+  text-transform: uppercase;
+  margin-bottom: 16px;
+}
+.hero__heading-title {
+  font-family: Montserrat;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+
+/* flights-feature section */
+.flights-feature-wrapper {
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translate(-50%, -30%);
+}
+.flights-feature-container {
+  display: flex;
+  /* width: 1232px; */
+  padding: 16px 32px 32px 32px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 32px;
+  border-radius: 16px;
+  background: var(--Neutrals);
+  box-shadow: 0px 4px 16px 0px rgba(141, 211, 187, 0.15);
+  color: var(--Blackish-Green);
+}
+.flights-feature__btns-container {
+  display: flex;
+  gap: 32px;
+  align-items: center;
+}
+.flights-feature__btn {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  min-height: 46px;
+  border-bottom: 4px solid transparent;
+  transition: border ease 0.1s;
+}
+.flights-feature__btn:hover {
+  border-bottom: 4px solid rgba(141, 211, 187, 1);
+}
+.flights-feature__btn-extra-line {
+  width: 1px;
+  min-height: 46px;
+  background: #d7e2ee;
+}
+.flights-feature__btn__icon {
+  width: 24px;
+  height: 24px;
+  fill: var(--Blackish-Green);
+}
+.flights-feature__btn__text {
+  color: var(--Blackish-Green);
+  font-family: Montserrat;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+.flights-feature__form {
+  width: 100%;
+}
+.flights-feature__form-label-container {
+  margin-bottom: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+  width: 100%;
+}
+.flights-feature__form-label {
+  flex: 1;
+  border-radius: 4px;
+  padding: 8px;
+  border: 1px solid rgba(121, 116, 126, 1);
+  color: #1c1b1f;
+  font-family: Montserrat;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.flights-feature__form-input {
+  width: 100%;
+  padding: 10px;
+}
+.flights-feature__form-btn-container {
+  padding: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  gap: 24px;
+}
+.flights-feature__form-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1px;
+  padding: 16px;
+}
+.flights-feature__form-btn__icon {
+  width: 16px;
+  height: 16px;
+}
+.flights-feature__form-btn__text {
+  color: var(--Blackish-Green);
+  font-family: Montserrat;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+.btn-light {
+  border-radius: 4px;
+  background: var(--Mint-Green);
+}
+/* plan-perfect-trip-section */
+.plan-perfect-trip-section {
+  padding-top: 80px;
+  color: var(--Blackish-Green);
+}
+.plan-perfect-trip-section__main {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 40px;
+}
+.plan-perfect-trip-section__main__div {
+  display: flex;
+  flex-direction: column;
+}
+.plan-perfect-trip-section__main__heading {
+  color: #000;
+  font-family: Montserrat;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+.plan-perfect-trip-section__main__text {
+  font-family: Montserrat;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.no-bg-main-btn {
+  font-family: Montserrat;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  border-radius: 4px;
+  border: 1px solid var(--Mint-Green);
+  padding: 8px 16px;
+  transition: all 0.2s linear;
+}
+.no-bg-main-btn:hover {
+  background-color: var(--Mint-Green);
+}
+.plan-perfect-trip-section__card-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  grid-column-gap: 32px;
+  grid-row-gap: 32px;
+}
+.plan-perfect-trip-section__card {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 16px;
+  border-radius: 16px;
+  background: var(--Neutrals);
+  box-shadow: 0px 4px 16px 0px rgba(17, 34, 17, 0.05);
+}
+.plan-perfect-trip-section__card__img {
+  border-radius: 8px;
+}
+.plan-perfect-trip-section__card__text-contaner {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.plan-perfect-trip-section__card__text-contaner_text {
+  font-family: Montserrat;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+.plan-perfect-trip-section__card__text-contaner_category {
+  font-family: Montserrat;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+/* show-hotels-flights-section */
+.show-hotels-flights-section {
+  margin-top: 80px;
+  padding-bottom: 70px;
+}
+.show-hotels-flights-section-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+}
+.show-hotels-flights-card {
+  width: 50%;
+  height: 559px;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  gap: 8px;
+  flex-direction: column;
+  padding: 24px;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.show-hotels-flights-card__main-text {
+  color: var(--Neutrals);
+  text-align: center;
+  font-family: TradeGothic LT Extended;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+.show-hotels-flights-card__main-comment {
+  color: var(--Neutrals);
+  text-align: center;
+  font-family: Montserrat;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  width: 389px;
+}
